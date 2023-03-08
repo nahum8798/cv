@@ -10,6 +10,12 @@
   margin: 0;
 }
 
+:root{
+  --white:rgb(255, 255, 255);
+  --grey_1:rgb(180, 180, 180);
+  --grey_2:rgb(200, 200, 200);
+}
+
 html,
 body {
   min-height: 100%;
@@ -34,7 +40,7 @@ figure .foto-perfil {
 }
 
 header h1 {
-  color: rgb(255, 255, 255);
+  color: var(--white);
   margin-left: 0.9em;
   padding: 0.9em;
   font-size: 3.125em;
@@ -52,7 +58,7 @@ header h1 {
 nav {
   height: 4.7em;
   padding-top: 1.6em;
-  background-color: rgb(200, 200, 200);
+  background-color: var(--grey_2);
   display: block;
 }
 
@@ -80,7 +86,7 @@ nav ul a {
 
 nav ul a:hover {
   border: 0.06em none;
-  background: rgb(180, 180, 180);
+  background: var(--grey_1);
   height: 4.375em;
   border-radius: 0.625em;
   padding: 0.625em;
@@ -94,7 +100,7 @@ nav ul a:hover {
   nav {
     height: auto;
     padding-top: 1.6em;
-    background-color: rgb(200, 200, 200);
+    background-color: var(--grey_2);
     display: block;
   }
 
@@ -117,13 +123,13 @@ nav ul a:hover {
   nav .ul-nav a {
     display: block;
     padding: 10px;
-    background-color: rgb(200, 200, 200);
+    background-color:  var(--grey_2);
     color: rgb(0, 0, 0);
   }
 
   nav ul a:hover {
     border: 0.06em none;
-    background: rgb(180, 180, 180);
+    background: var(--grey_1);
     height: auto;
     border-radius: 0.625em;
     padding: 0.625em;
@@ -174,7 +180,7 @@ td {
   margin-top: auto;
   text-align: left;
   padding: 0.9em;
-  background: rgb(180, 180, 180);
+  background: var(--grey_1);
 }
 
 section>div>table {
@@ -212,7 +218,7 @@ section>div>table {
 
 #aptitudes-section > .aptitudes-content {
   width: 50%;
-  background-color: rgb(200, 200, 200);
+  background-color:  var(--grey_2);
   border-radius: 0.625em;
   margin-left: auto;
   margin-right: auto;
@@ -226,26 +232,11 @@ section>div>table {
 }
 
 #redes-sociales-section {
-  background-color: rgb(200, 200, 200);
+  background-color:  var(--grey_2);
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
   padding-top: 3.125em;
-}
-
-#redes-sociales-section > ul > li > a > i {
-  font-size: 3.125em;
-  padding: 3.125em;
-  color: rgb(0, 50, 100, 0.5);
-}
-
-#redes-sociales-section > ul > li > a:hover {
-  border: 0.06em none;
-  background: rgb(180, 180, 180);
-  height: 8.75em;
-  border-radius: 0.625em;
-  padding: 3.125em;
-  cursor: pointer;
 }
 
 #redes-sociales-section > ul {
@@ -256,12 +247,29 @@ section>div>table {
   list-style-type: none;
 }
 
+#redes-sociales-section > ul > li > a > i {
+  font-size: 3.125em;
+  padding: 3.125em;
+  color: rgb(0, 50, 100, 0.5);
+}
+
+#redes-sociales-section > ul > li > a:hover {
+  border: 0.06em none;
+  background: var(--grey_1);
+  height: 8.75em;
+  border-radius: 0.625em;
+  padding: 3.125em;
+  cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 600px) {
   #redes-sociales-section {
     height: auto;
     width: auto;
     padding-top: 1.6em;
-    background-color: rgb(200, 200, 200);
+    background-color:  var(--grey_2);
     display: block;
   }
   
@@ -272,7 +280,7 @@ section>div>table {
   #redes-sociales-section > ul a {
     display: block;
     padding: 0;
-    background-color: rgb(200, 200, 200);
+    background-color:  var(--grey_2);
     color: #fff;
   }
 
@@ -295,14 +303,14 @@ section>div>table {
 }
 
 .contacto-container {
-  background-color: rgb(200, 200, 200);
+  background-color:  var(--grey_2);
   border-radius: 0.625em;
   padding: 3.125em;
   margin-right: 0.625em;
 }
 
 .datos-container {
-  background-color: rgb(200, 200, 200);
+  background-color:  var(--grey_2);
   border-radius: 0.625em;
   padding: 3.125em;
   margin-left: 0.625em;
@@ -323,5 +331,5 @@ section>div>table {
   height: 3.125em;
   text-align: center;
   padding: 1.5em;
-  background-color: rgb(200, 200, 200);
+  background-color:  var(--grey_2);
 }
